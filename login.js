@@ -1,0 +1,19 @@
+const { Client, GatewayIntentBits } = require('discord.js');
+
+const client = new Client({
+    intents: [
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.MessageContent,
+        GatewayIntentBits.GuildMembers
+    ]
+});
+
+client.once('ready', () => {
+    console.log(`Bot logged in as ${client.user.tag}!`);
+    
+    // سطر ربط ملف الأوامر
+    require('./commands.js')(client);
+});
+
+client.login('MTUyMjgzNTM5NzE0MTU5NDE2Mg.GKWdbF.lDwNDEoccrXAGerv2ZN9EU85O4jxGrLqNbxbUU');

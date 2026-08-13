@@ -1,0 +1,9 @@
+{
+  "name": "my-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^14.27.0",
+    "node-cron": "^4.6.0"
+  }
+}
