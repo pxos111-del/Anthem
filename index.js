@@ -15,4 +15,4 @@ client.once('ready', () => {
 });
 
 // الصق التوكن الخاص بك هنا بين علامتي التنصيص
-client.login('MTUyMjgzNTM5NzE0MTU5NDE2Mg.GKWdbF.lDwNDEoccrXAGerv2ZN9EU85O4jxGrLqNbxbUU');
+client.login(process.env.DISCORD_TOKEN);
