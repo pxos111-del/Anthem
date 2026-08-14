@@ -10,7 +10,7 @@ const client = new Client({
 });
 
 client.once('ready', () => {
-    console.log(`B1ot logged in as ${client.user.tag}!`);
+    console.log(`Bot logged in as ${client.user.tag}!`);
     
     // سطر ربط ملف الأوامر
     require('./commands.js')(client);
