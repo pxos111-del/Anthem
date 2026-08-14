@@ -9,7 +9,7 @@ const client = new Client({
 });
 
 client.once('ready', () => {
-    console.log(`Logged in as ${client.user.tag}!`);
+    console.log(`Logged1 in as ${client.user.tag}!`);
     // تعيين الحالة الحمراء (Do Not Disturb)
     client.user.setStatus('dnd');
 });
